@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/*wrapper*/
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  padding: 16px;
+}
+.heading h1{
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.image{
+  width: 100px;
+  height: auto;
+}
+.date-cell  {width: 50% !important;}
+.topic-cell  { width: 170% !important;}
+.title-content  {
+  padding: 9% 0;
+  font-size: 19px;
+}
+.access-link-cell,.replay-link-cell  { width: 50% !important; }
+.access-link-content,
+.replay-link-content  { 
+  padding: 33% 0;
+  font-size: 18px;
+}
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.table-row {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid #EDF0F0;
+}
+.table-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 13px 20px;
+  overflow: hidden;
+}
+.column-heading {
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.table-cell-heading {display: none;}
+/*responsive*/
+@media screen and (max-width: 906px) {
+  .access-link-content,
+  .replay-link-content {font-size: 16px;}
+}
+@media screen and (max-width: 750px) {
+  .heading h1{margin-bottom: 30px;}
+  .table-row {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 16px 32px 16px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  .table-cell {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+  }
+  .table-cell-heading {
+    display: inline-block;
+    flex: 1;
+    max-width: 90px;
+    min-width: 90px;
+    font-weight: 700;
+    margin-right: 16px;
+  }
+  .table-cell-content {
+    flex: 2;
+    padding-left: 16px;
+  }
+  .title-content{
+    flex: 3 !important;
+    padding: 0;
+  }
+  .table-cell-content {
+    padding-left: 0 !important;
+  }
+  .table-row-head {
+    display: none;
+  }
+  .title-content  {
+    padding: 0;
+    font-size: 19px;
+  }
+  .access-link-content,
+  .replay-link-content {padding: 0;}
+}
+@media screen and (max-width: 517px){
+  .access-link-content,
+  .title-content,
+  .replay-link-content{font-size: 16px;}
+}
